@@ -9,6 +9,7 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import { defineComponent } from "vue";
 
+// Error here: "'IFoo' is not defined.eslintno-undef"
 const x: IFoo = {
     bar: "hello"
 }
