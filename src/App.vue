@@ -9,6 +9,13 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import { defineComponent } from "vue";
 
+const x: IFoo = {
+    bar: "hello"
+}
+
+// eslint-disable-next-line no-console
+console.log(x);
+
 export default defineComponent({
   name: "App",
 
