@@ -19,9 +19,15 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:vue/vue3-recommended",
-    "prettier/@typescript-eslint",
-    "eslint-config-prettier/vue",
+    "prettier",
   ],
+
+  globals: {
+    defineProps: "readonly",
+    defineEmits: "readonly",
+    defineExpose: "readonly",
+    withDefaults: "readonly",
+  },
 
   rules: {
     // Vue
@@ -30,5 +36,6 @@ module.exports = {
     // Eslint
     "eol-last": ["error", "always"],
     "no-console": "warn",
+    semi: ["error", "always"],
   },
 };
